@@ -61,5 +61,7 @@ public class HashSetAPI {
 		set.add(info_e);
 
 		set.forEach(info -> info.display());
+		//set.forEach(HashSetAPI_info::display);
+		//for(HashSetAPI_info n: set) {n.display();}
 	}
 }

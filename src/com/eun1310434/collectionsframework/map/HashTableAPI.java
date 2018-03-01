@@ -60,8 +60,6 @@ public class HashTableAPI {
 		Collection<String> getValues = hashTable.values();
 		String[] data = new String[getValues.size()];
 		getValues.toArray(data);
-		for(String str: data) {
-			System.out.println(str);
-		}
+		for(String str: data) {System.out.println(str);}
 	}
 }

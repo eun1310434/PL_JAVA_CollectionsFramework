@@ -8,10 +8,10 @@ package com.eun1310434.collectionsframework.list;
 import java.util.ArrayList;
 import java.util.List;
 interface ArrayListAPI1_onlyString {
-	public String stringValue(); 
+	public String stringOut(); 
 }
 interface ArrayListAPI1_onlyInteger {
-	public Integer integerValue();
+	public Integer integerOut();
 }
 
 class ArrayListAPI1_info implements ArrayListAPI1_onlyString, ArrayListAPI1_onlyInteger {
@@ -23,12 +23,12 @@ class ArrayListAPI1_info implements ArrayListAPI1_onlyString, ArrayListAPI1_only
 	}
 
 	@Override
-	public String stringValue() {
+	public String stringOut() {
 		return key;
 	}
 
 	@Override
-	public Integer integerValue() {
+	public Integer integerOut() {
 		return value;
 	}
 	
@@ -57,13 +57,13 @@ class ArrayListAPI1_Copy {
 	public static <T extends ArrayListAPI1_onlyString> void copyString(List<T> src, List<String> getListMemory) {
 		for(int n = 0; n < src.size(); ++n) {
 			T t = src.get(n);
-			getListMemory.add(t.stringValue());
+			getListMemory.add(t.stringOut());
 		}
 	}
 	public static <T extends ArrayListAPI1_onlyInteger> void copyInteger(List<T> src, List<Integer> getListMemory) {
 		for(int n = 0; n < src.size(); ++n) {
 			T t = src.get(n);
-			getListMemory.add(t.integerValue());
+			getListMemory.add(t.integerOut());
 		}
 	}
 }

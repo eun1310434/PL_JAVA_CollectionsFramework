@@ -52,5 +52,7 @@ public class LinkedHashSetAPI {
 		set.add(info_e);
 
 		set.forEach(info -> info.display());
+		//set.forEach(LinkedHashSetAPI_info::display);
+		//for(LinkedHashSetAPI_info n: set) {n.display();}
 	}
 }

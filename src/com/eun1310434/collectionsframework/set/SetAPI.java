@@ -39,9 +39,7 @@ public class SetAPI {
 		//String 배열을 Set으로 변경
 		
 		System.out.println("size = " + sets.size());
-		for(String str: sets) {
-			System.out.print(str + "\t");
-		}
+		for(String str: sets) {System.out.print(str + "\t");}
 		System.out.println();
 		System.out.println();
 
@@ -57,10 +55,8 @@ public class SetAPI {
 		AddSets.add("C6");
 		sets.addAll(AddSets2);
 		//AddSets2의 값을 sets에 입력
-		
-		for(String str: sets) {
-			System.out.print(str + "\t");
-		}
+
+		for(String str: sets) {System.out.print(str + "\t");}
 		System.out.println();
 		System.out.println();
 		
@@ -98,9 +94,7 @@ public class SetAPI {
 		String[] results = new String[sets.size()];
 		sets.toArray(results);
 		//
-		for(String str: results) {
-			System.out.print(str + "\t");
-		}
+		for(String str: sets) {System.out.print(str + "\t");}
 		System.out.println();
 		System.out.println();
 
